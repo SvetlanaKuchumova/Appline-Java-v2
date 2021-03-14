@@ -10,10 +10,10 @@ public class MaxElemOfArrayAndCalculator3 {
 
         switch (numberTask) {
             case 1:
-                Calculator();
+                calculator();
                 break;
             case 2:
-                MaxElementOfArray();
+                maxElementOfArray();
                 break;
             default:
                 System.err.println("Incorrect number of the task");
@@ -22,7 +22,7 @@ public class MaxElemOfArrayAndCalculator3 {
     }
 
     //Find an element with a maximum length
-    public static void MaxElementOfArray() {
+    public static void maxElementOfArray() {
         Scanner scan = new Scanner(System.in);
 
         // Enter the number of elements of the array
@@ -53,7 +53,7 @@ public class MaxElemOfArrayAndCalculator3 {
     }
 
     // Calculator
-    public static void Calculator() {
+    public static void calculator() {
         Scanner scan = new Scanner(System.in);
 
         // Enter numbers
@@ -70,7 +70,7 @@ public class MaxElemOfArrayAndCalculator3 {
         //Output the result
         if ((operation == '+') || (operation == '-') || (operation == '*') || (operation == '/')) {
             //Calculate
-            double result = Calculation(firstNumber, secondNumber, operation);
+            double result = calculation(firstNumber, secondNumber, operation);
             System.out.printf("%.4f %c %.4f = %.4f ", firstNumber, operation, secondNumber, result);
         } else {
             System.err.println("Input Error");
@@ -79,7 +79,7 @@ public class MaxElemOfArrayAndCalculator3 {
     }
 
     // Calculation for Calculator (+ - * /)
-    public static double Calculation(double x, double y, char oper) {
+    public static double calculation(double x, double y, char oper) {
         double result = 0;
         switch (oper) {
             case '+':
