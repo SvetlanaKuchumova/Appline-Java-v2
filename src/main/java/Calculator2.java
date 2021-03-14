@@ -18,12 +18,11 @@ public class Calculator2 {
         //Select the operation + - / *
         System.out.println("Select the operation: ‘+’, ‘-’, ‘*’ or ‘/’");
         char operation = scan.next().charAt(0);
-        double result = 0;
 
         //Output the result
         if ((operation == '+') || (operation == '-') || (operation == '*') || (operation == '/')) {
             //Calculate
-            result = Calculation(firstNumber, secondNumber, operation);
+            double result = Calculation(firstNumber, secondNumber, operation);
             System.out.printf("%.4f %c %.4f = %.4f ", firstNumber, operation, secondNumber, result);
         }
         else {
