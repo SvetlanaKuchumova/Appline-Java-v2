@@ -33,26 +33,26 @@ public class Calculator2 {
 
     /**
      *
-     * @param firstNumber First number (double)
-     * @param secondNumber Second number (double)
-     * @param operation operation ‘+’, ‘-’, ‘*’ or ‘/’"
+     * @param x First number (double)
+     * @param y Second number (double)
+     * @param oper operation ‘+’, ‘-’, ‘*’ or ‘/’"
      * @return calculation result
      */
 
-    public static double Calculation(double firstNumber, double secondNumber, char operation){
+    public static double Calculation(double x, double y, char oper){
         double result = 0;
-        switch (operation) {
+        switch (oper) {
             case '+':
-                result = firstNumber + secondNumber;
+                result = x + y;
                 break;
             case '-':
-                result = firstNumber - secondNumber;
+                result = x - y;
                 break;
             case '*':
-                result = firstNumber * secondNumber;
+                result = x * y;
                 break;
             case '/':
-                result = firstNumber / secondNumber;
+                result = x / y;
                 break;
         }
         return result;
