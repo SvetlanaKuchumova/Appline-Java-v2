@@ -65,10 +65,8 @@ public class RandomArray4 {
     }
 
     //Рандомные целые числа в промежутке [a, b]
-    public static int randomInt(int a, int b){
+    public static int randomInt(int minRange, int maxRange){
         Random random = new Random();
-        int minRange = a;
-        int maxRange = b;
         return minRange + random.nextInt(maxRange - minRange + 1);
     }
 }
