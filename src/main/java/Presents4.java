@@ -17,12 +17,10 @@ public class Presents4 {
         Chocolate italian = new Chocolate("Итальянский", 0.09, 560, "Молочный");
         Chocolate russian = new Chocolate("Российский", 0.1, 600, "Черный");
 
-        double totalPrice = 0;
-        totalPrice = cow.getWeigth() * cow.getPrice() + mars.getWeigth() * mars.getPrice() + bear.getWeigth() * bear.getPrice() +
+        double totalPrice = cow.getWeigth() * cow.getPrice() + mars.getWeigth() * mars.getPrice() + bear.getWeigth() * bear.getPrice() +
                 italian.getWeigth() * italian.getPrice() + russian.getWeigth() * russian.getPrice();
 
-        double totalWeigth = 0;
-        totalWeigth = cow.getWeigth() + mars.getWeigth() + bear.getWeigth() + italian.getWeigth() + russian.getWeigth();
+        double totalWeigth = cow.getWeigth() + mars.getWeigth() + bear.getWeigth() + italian.getWeigth() + russian.getWeigth();
 
         System.out.println("Состав подарка:");
         Present [] boxPresent = {cow, mars, bear, italian, russian};
