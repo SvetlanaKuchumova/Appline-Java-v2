@@ -13,7 +13,7 @@ public class RandomArray4 {
         System.out.println("Массив: ");
         //Заполнение массива рандомными числами
         for (int i = 0; i < countElemArray; i++) {
-            arrRandom[i] = randomInt();
+            arrRandom[i] = randomInt(-10, 10); //Минимальное и максимальное значение рандомных чисел [-10 ; 10]
             System.out.printf("array[%d] = %d\n", i, arrRandom[i]);
         }
 
@@ -33,7 +33,7 @@ public class RandomArray4 {
         int indexMaxNegativeEl = 0;
         int minPositiveEl = maxEl;
         int indexMinPositiveEl = 0;
-        for (int i = 1; i < countElemArray; i++){
+        for (int i = 0; i < countElemArray; i++){
             //Поиск максимального отрицательного элемента массива
             if (arrRandom[i] < 0) {
                 if (arrRandom[i] > maxNegativeEl) {
@@ -64,11 +64,11 @@ public class RandomArray4 {
 
     }
 
-    public static int randomInt(){
+    //Рандомные целые числа в промежутке [a, b]
+    public static int randomInt(int a, int b){
         Random random = new Random();
-        //Минимальное и максимальное значение рандомных чисел [-10 ; 10]
-        final int MAX_RANGE = 10;
-        final int MIN_RANGE = -10;
-        return MIN_RANGE + random.nextInt(MAX_RANGE - MIN_RANGE + 1);
+        int minRange = a;
+        int maxRange = b;
+        return minRange + random.nextInt(maxRange - minRange + 1);
     }
 }
