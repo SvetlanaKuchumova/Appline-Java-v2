@@ -8,6 +8,8 @@ public class Chocolate extends Present{
         this.percentageCocoa = percentageCocoa;
     }
 
+    public Chocolate() {}
+
     public String getPercentageCocoa() {
         return percentageCocoa;
     }

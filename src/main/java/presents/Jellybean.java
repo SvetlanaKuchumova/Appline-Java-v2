@@ -8,6 +8,8 @@ public class Jellybean extends Present{
         this.color = color;
     }
 
+    public Jellybean() {}
+
     public String getColor() {
         return color;
     }

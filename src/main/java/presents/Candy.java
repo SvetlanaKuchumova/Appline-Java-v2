@@ -7,10 +7,11 @@ public class Candy extends Present{
         super(name, weigth, price);
         this.filling = filling;
     }
-
     public String getFilling() {
         return filling;
     }
+
+    public Candy() { }
 
     public void setFilling(String filling) {
         this.filling = filling;
