@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
 
-
         Scanner scan = new Scanner(System.in);
 
         // Enter numbers
@@ -28,15 +27,19 @@ public class Calculator {
             switch (operation) {
                 case '+':
                     Addition add = new Addition(firstNumber, secondNumber);
+                    System.out.println(add.toString());
                     break;
                 case '-':
                     Subtraction sub = new Subtraction(firstNumber, secondNumber);
+                    System.out.println(sub.toString());
                     break;
                 case '*':
-                    Multiplication mul = new Multiplication(firstNumber, secondNumber);
+                    Multiplication mult = new Multiplication(firstNumber, secondNumber);
+                    System.out.println(mult.toString());
                     break;
                 case '/':
                     Division div = new Division(firstNumber, secondNumber);
+                    System.out.println(div.toString());
                     break;
             }
         } else {

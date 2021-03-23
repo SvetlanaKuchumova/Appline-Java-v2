@@ -2,7 +2,20 @@ package calculator5.operations;
 
 public class Subtraction {
 
+    private double x;
+    private double y;
+
     public Subtraction(double x, double y) {
-        System.out.printf("%.4f - %.4f = %.4f ", x, y, x - y);
+        this.x = x;
+        this.y = y;
+    }
+
+    public double sub(){
+        return x - y;
+    }
+
+    @Override
+    public String toString() {
+        return x + " - " + y + " = " + sub() + "";
     }
 }
